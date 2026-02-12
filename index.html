@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+<div class="space-bg"></div>
+<div id="earthCanvas"></div>
+
+<div class="app">
+  <h1>🌍 Space Weather</h1>
+
+  <div class="search">
+    <input type="text" id="cityInput" placeholder="Enter city">
+    <button onclick="getWeather()">Search</button>
+  </div>
+
+  <div class="weather-grid">
+    <p id="city"></p>
+    <p id="temp"></p>
+    <p id="desc"></p>
+    <p id="humidity"></p>
+    <p id="wind"></p>
+    <p id="pressure"></p>
+    <p id="feels"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="earth.js"></script>
+
+</body>
+</html>
